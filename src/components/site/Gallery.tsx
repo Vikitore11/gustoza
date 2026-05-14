@@ -4,7 +4,7 @@ const photos = [
   { src: "/photos/g05.jpg", alt: "Входът на Gustoza" },
   { src: "/photos/g06.jpg", alt: "Гръцки декор в Gustoza" },
   { src: "/photos/unnamed.jpg", alt: "Калмари, октопод и тиквички" },
-  { src: "/photos/food.jpg", alt: "Лангустини с шафранов ориз" },
+  { src: "/photos/meat.jpg", alt: "Лангустини с шафранов ориз" },
 ];
 
 export function Gallery() {
