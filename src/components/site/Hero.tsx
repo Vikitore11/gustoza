@@ -4,7 +4,7 @@ const hero = "/photos/g01.jpg";
 export function Hero() {
   return (
     <section id="top" className="relative min-h-[100svh] flex items-center justify-center text-center text-white overflow-hidden">
-      <img src={hero} alt="Гръцка кухня в Gustoza" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1280} />
+      <img src={hero} alt="Гръцка кухня в Gustosa" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1280} />
       <div className="absolute inset-0 bg-gradient-to-b from-primary/70 via-primary/50 to-primary/80" />
       <div className="relative z-10 px-5 max-w-3xl mx-auto pt-20 pb-16">
         <p className="uppercase tracking-[0.3em] text-xs md:text-sm text-accent mb-5">Est. 1996 · София</p>

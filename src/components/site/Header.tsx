@@ -22,7 +22,7 @@ export function Header() {
     <header className={`fixed top-0 inset-x-0 z-40 transition-all duration-300 ${scrolled ? "bg-background/95 backdrop-blur shadow-sm border-b border-border" : "bg-transparent"}`}>
       <div className="mx-auto max-w-6xl px-5 h-16 flex items-center justify-between">
         <a href="#top" className={`font-display text-2xl font-bold tracking-wide ${scrolled ? "text-primary" : "text-white"}`}>
-          Gustoza
+          Gustosa
         </a>
         <nav className="hidden md:flex items-center gap-8">
           {links.map(l => (

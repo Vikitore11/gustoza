@@ -7,7 +7,7 @@ export function Footer() {
         {/* Brand */}
         <div className="md:col-span-5">
           <div className="font-display text-3xl font-bold">
-            Gustoza
+            Gustosa
           </div>
 
           <p className="mt-4 text-primary-foreground/70 max-w-sm text-sm leading-relaxed">
@@ -82,10 +82,10 @@ export function Footer() {
 
               <li>
                 <a
-                  href="mailto:hello@gustoza.bg"
+                  href="mailto:hello@gustosa.bg"
                   className="hover:text-accent transition-colors break-all"
                 >
-                  hello@gustoza.bg
+                  hello@gustosa.bg
                 </a>
               </li>
             </ul>
@@ -111,7 +111,7 @@ export function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-white/10">
         <div className="mx-auto max-w-6xl px-5 py-5 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-primary-foreground/50">
-          <p>© 2026 Gustoza. Всички права запазени.</p>
+          <p>© 2026 Gustosa. Всички права запазени.</p>
           <p>Authentic Greek Restaurant in Sofia</p>
         </div>
       </div>

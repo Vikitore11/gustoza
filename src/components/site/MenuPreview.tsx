@@ -155,7 +155,7 @@ const categories = [
   },
   {
     key: "pasta",
-    label: "Паста Gustoza",
+    label: "Паста Gustosa",
     emoji: "🍝",
     image: "/photos/pasta.webp",
     imageAlt: "Паста с морски дарове",

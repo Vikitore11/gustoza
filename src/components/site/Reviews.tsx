@@ -36,7 +36,7 @@ export function Reviews() {
             <div className="relative h-85 overflow-hidden">
               <img
                 src="/photos/vlogger.jpg"
-                alt="Alexander Vlog в Gustoza"
+                alt="Alexander Vlog в Gustosa"
                 className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
               />
             </div>

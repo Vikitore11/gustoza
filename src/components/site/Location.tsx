@@ -16,7 +16,7 @@ export function Location() {
         </div>
         <div className="order-1 md:order-2 rounded-2xl overflow-hidden shadow-warm h-[400px] md:h-auto min-h-[400px] border border-border">
           <iframe
-            title="Местоположение Gustoza"
+            title="Местоположение Gustosa"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11731.630847824106!2d23.374371099999998!3d42.684497199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa85e5e06a776b%3A0xc9d38579b3b27ab9!2sGustoza%20Ltd!5e0!3m2!1sen!2sbg!4v1778714496524!5m2!1sen!2sbg"
             className="w-full h-full"
             loading="lazy"

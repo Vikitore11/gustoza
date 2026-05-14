@@ -1,8 +1,8 @@
 const photos = [
-  { src: "/photos/g01.jpg", alt: "Топлата атмосфера на Gustoza" },
-  { src: "/photos/g04.jpg", alt: "Лятна тераса Gustoza" },
-  { src: "/photos/g05.jpg", alt: "Входът на Gustoza" },
-  { src: "/photos/g06.jpg", alt: "Гръцки декор в Gustoza" },
+  { src: "/photos/g01.jpg", alt: "Топлата атмосфера на Gustosa" },
+  { src: "/photos/g04.jpg", alt: "Лятна тераса Gustosa" },
+  { src: "/photos/g05.jpg", alt: "Входът на Gustosa" },
+  { src: "/photos/g06.jpg", alt: "Гръцки декор в Gustosa" },
   { src: "/photos/unnamed.jpg", alt: "Скариди, приготвени в тиган с резени лимон" },
   { src: "/photos/meat.jpg", alt: "Ципура на скара" },
 ];
@@ -16,7 +16,7 @@ export function Gallery() {
             Галерия
           </p>
           <h2 className="text-3xl md:text-5xl font-bold text-primary">
-            Една вечер в Gustoza
+            Една вечер в Gustosa
           </h2>
         </div>
 

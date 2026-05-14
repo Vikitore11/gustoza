@@ -12,16 +12,16 @@ import { StickyReserve } from "@/components/site/StickyReserve";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Restaraunt Gustoza" },
+      { title: "Restaraunt Gustosa" },
       {
         name: "description",
         content:
-          "Gustoza - автентичен гръцки ресторант в Sofia, кв. Слатина, от 1996 г. Прясна дива риба, октопод, лангустини и мезета, доставяни директно от Гърция. Резервации: +359 888 23 1246.",
+          "Gustosa - автентичен гръцки ресторант в Sofia, кв. Слатина, от 1996 г. Прясна дива риба, октопод, лангустини и мезета, доставяни директно от Гърция. Резервации: +359 888 23 1246.",
       },
-      { name: "keywords", content: "гръцки ресторант София, Gustoza, риба ресторант Слатина, морски дарове София, гръцка кухня, октопод, лангустини, мезета, свежа риба" },
+      { name: "keywords", content: "гръцки ресторант София, Gustosa, риба ресторант Слатина, морски дарове София, гръцка кухня, октопод, лангустини, мезета, свежа риба" },
       { name: "robots", content: "index, follow" },
-      { name: "author", content: "Gustoza" },
-      { property: "og:title", content: "Gustoza - Гръцки ресторант в София от 1996" },
+      { name: "author", content: "Gustosa" },
+      { property: "og:title", content: "Gustosa - Гръцки ресторант в София от 1996" },
       {
         property: "og:description",
         content: "Автентична гръцка кухня, прясна дива риба и морски деликатеси в кв. Слатина, София.",
@@ -30,24 +30,24 @@ export const Route = createFileRoute("/")({
       { property: "og:locale", content: "bg_BG" },
       { property: "og:image", content: "/photos/logo.jpg" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Gustoza - Гръцки ресторант в София" },
+      { name: "twitter:title", content: "Gustosa - Гръцки ресторант в София" },
       { name: "twitter:description", content: "Автентична гръцка кухня, прясна риба и морски деликатеси в кв. Слатина, София." },
     ],
-    links: [{ rel: "canonical", href: "https://gustoza.bg/" }],
+    links: [{ rel: "canonical", href: "https://gustosa.bg/" }],
     scripts: [
       {
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Restaurant",
-          name: "Gustoza",
+          name: "Gustosa",
           description: "Автентичен гръцки ресторант в София от 1996 г. Прясна риба, морски дарове и мезета, доставяни директно от Гърция.",
           servesCuisine: ["Greek", "Mediterranean", "Seafood"],
           priceRange: "€€",
           foundingDate: "1996",
-          url: "https://gustoza.bg",
+          url: "https://gustosa.bg",
           telephone: "+359 88823 1246",
-          email: "hello@gustoza.bg",
+          email: "hello@gustosa.bg",
           address: {
             "@type": "PostalAddress",
             streetAddress: "ул. Мъдрен 18",
@@ -73,7 +73,7 @@ export const Route = createFileRoute("/")({
           image: "/photos/food_langoustine_rice.jpg",
           currenciesAccepted: "EUR",
           paymentAccepted: "Cash, Credit Card",
-          menu: "https://gustoza.bg/#menu",
+          menu: "https://gustosa.bg/#menu",
         }),
       },
     ],
