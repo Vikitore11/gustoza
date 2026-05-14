@@ -44,7 +44,7 @@ export function Reviews() {
               <span className="text-xs font-bold uppercase tracking-wider text-accent">Препоръчано от</span>
               <div className="font-bold text-primary text-lg">Alexander Vlog</div>
               <p className="text-muted-foreground text-sm leading-relaxed italic">
-                "Най-хубаво узо в най-старият гръцки ресторант в София. Перфектен обяд в ресторант Густоза, подкрепен с леко и ароматно узо 35."
+                "Най-хубаво узо в най-стария гръцки ресторант в София. Перфектен обяд в ресторант Густоза, подкрепен с леко и ароматно узо 35."
               </p>
               <a
                 href="https://www.facebook.com/reel/744477375209241"
