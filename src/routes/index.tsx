@@ -28,7 +28,7 @@ export const Route = createFileRoute("/")({
       },
       { property: "og:type", content: "restaurant" },
       { property: "og:locale", content: "bg_BG" },
-      { property: "og:image", content: "/photos/food_langoustine_rice.jpg" },
+      { property: "og:image", content: "/photos/logo.jpg" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Gustoza - Гръцки ресторант в София" },
       { name: "twitter:description", content: "Автентична гръцка кухня, прясна риба и морски деликатеси в кв. Слатина, София." },
