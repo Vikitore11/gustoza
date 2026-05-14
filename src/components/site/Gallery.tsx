@@ -5,7 +5,6 @@ const photos = [
   { src: "/photos/g06.jpg", alt: "Гръцки декор в Gustoza" },
   { src: "/photos/unnamed.jpg", alt: "Калмари, октопод и тиквички" },
   { src: "/photos/food.jpg", alt: "Лангустини с шафранов ориз" },
-  { src: "/photos/meat.jpg", alt: "Октопод на жар" },
 ];
 
 export function Gallery() {
@@ -25,9 +24,7 @@ export function Gallery() {
           {photos.map((img, i) => (
             <div
               key={i}
-              className={`overflow-hidden rounded-2xl shadow-sm bg-secondary ${
-                i === 6 ? "col-span-2 md:col-span-3" : ""
-              }`}
+              className="overflow-hidden rounded-2xl shadow-sm bg-secondary"
             >
               <img
                 src={img.src}
