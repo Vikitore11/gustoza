@@ -3,8 +3,8 @@ const photos = [
   { src: "/photos/g04.jpg", alt: "Лятна тераса Gustoza" },
   { src: "/photos/g05.jpg", alt: "Входът на Gustoza" },
   { src: "/photos/g06.jpg", alt: "Гръцки декор в Gustoza" },
-  { src: "/photos/unnamed.jpg", alt: "Калмари, октопод и тиквички" },
-  { src: "/photos/meat.jpg", alt: "Лангустини с шафранов ориз" },
+  { src: "/photos/unnamed.jpg", alt: "Скариди, приготвени в тиган с резени лимон" },
+  { src: "/photos/meat.jpg", alt: "Ципура на скара" },
 ];
 
 export function Gallery() {
