@@ -6,7 +6,7 @@ export function About() {
       <div className="mx-auto max-w-6xl px-5 grid md:grid-cols-2 gap-12 items-center">
         <div>
           <p className="uppercase tracking-[0.2em] text-xs text-accent font-semibold mb-4">За нас</p>
-          <h2 className="text-3xl md:text-5xl font-bold text-primary">Най-старият гръцки ресторант в България</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-primary">Най-старият гръцки ресторант в София</h2>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
             Създаден през 1996 г., Gustoza е най-старият гръцки ресторант в София. Два уютни салона и просторна лятна градина - атмосфера, типична за Гърция, на крачка от дома ви.
           </p>
