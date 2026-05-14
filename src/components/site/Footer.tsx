@@ -1,17 +1,22 @@
 export function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground">
-      <div className="mx-auto max-w-6xl px-5 py-14 grid md:grid-cols-12 gap-8">
+      
+      <div className="mx-auto max-w-6xl px-5 py-14 grid md:grid-cols-12 gap-12">
 
         {/* Brand */}
         <div className="md:col-span-5">
-          <div className="font-display text-3xl font-bold">Gustoza</div>
+          <div className="font-display text-3xl font-bold">
+            Gustoza
+          </div>
 
-          <p className="mt-3 text-primary-foreground/70 max-w-sm text-sm leading-relaxed">
-            Автентичен гръцки ресторант в София от 1996 г. Прясна риба, мезета и истинска средиземноморска атмосфера.
+          <p className="mt-4 text-primary-foreground/70 max-w-sm text-sm leading-relaxed">
+            Автентичен гръцки ресторант в София от 1996 г.
+            Прясна риба, мезета и истинска средиземноморска атмосфера.
           </p>
 
-          <div className="mt-5 flex gap-3">
+          {/* Socials */}
+          <div className="mt-6 flex gap-3">
             {[
               {
                 label: "Facebook",
@@ -26,7 +31,7 @@ export function Footer() {
                 label: "Google",
                 d: "M21 11h-9v2.9h5.2c-.2 1.5-1.7 4.3-5.2 4.3-3.1 0-5.7-2.6-5.7-5.7S8.9 6.8 12 6.8c1.8 0 3 .8 3.7 1.4l2.5-2.4C16.6 4.3 14.5 3.4 12 3.4 7.3 3.4 3.5 7.2 3.5 12s3.8 8.6 8.5 8.6c4.9 0 8.2-3.4 8.2-8.3 0-.5-.1-1-.2-1.3z"
               },
-            ].map(s => (
+            ].map((s) => (
               <a
                 key={s.label}
                 href={s.href ?? "#"}
@@ -35,7 +40,12 @@ export function Footer() {
                 aria-label={s.label}
                 className="w-10 h-10 rounded-full bg-white/10 hover:bg-accent hover:text-accent-foreground flex items-center justify-center transition"
               >
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
                   <path d={s.d} />
                 </svg>
               </a>
@@ -43,20 +53,25 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Contacts + Hours wrapper */}
-        <div className="md:col-span-5 md:col-start-7 grid grid-cols-2 gap-8">
+        {/* Contacts + Hours */}
+        <div className="md:col-span-5 md:col-start-7 grid grid-cols-1 md:grid-cols-2 gap-10">
 
           {/* Contacts */}
           <div>
-            <div className="font-semibold mb-3 text-sm uppercase tracking-wider text-primary-foreground/50">
+            <div className="font-semibold mb-4 text-sm uppercase tracking-wider text-primary-foreground/50">
               Контакти
             </div>
 
-            <ul className="space-y-2 text-primary-foreground/80 text-sm">
-              <li>ж.к Христо Смирненски, ул. Мъдрен 18</li>
+            <ul className="space-y-3 text-primary-foreground/80 text-sm leading-relaxed">
+              <li>
+                ж.к Христо Смирненски,
+                <br />
+                ул. Мъдрен 18
+              </li>
+
               <li>София 1574</li>
 
-              <li className="pt-1">
+              <li className="pt-2">
                 <a
                   href="tel:+359888231246"
                   className="hover:text-accent transition-colors"
@@ -68,7 +83,7 @@ export function Footer() {
               <li>
                 <a
                   href="mailto:hello@gustoza.bg"
-                  className="hover:text-accent transition-colors"
+                  className="hover:text-accent transition-colors break-all"
                 >
                   hello@gustoza.bg
                 </a>
@@ -77,13 +92,13 @@ export function Footer() {
           </div>
 
           {/* Working hours */}
-          <div className="text-center">
-            <div className="font-semibold mb-3 text-sm uppercase tracking-wider text-primary-foreground/50">
+          <div className="text-left md:text-center">
+            <div className="font-semibold mb-4 text-sm uppercase tracking-wider text-primary-foreground/50">
               Работно време
             </div>
 
             <ul className="space-y-2 text-primary-foreground/80 text-sm">
-              <li className="flex justify-center gap-4">
+              <li className="flex md:justify-center gap-4">
                 <span>Пон – Нед</span>
                 <span>11:30 – 23:00</span>
               </li>
@@ -92,6 +107,15 @@ export function Footer() {
 
         </div>
       </div>
+
+      {/* Bottom bar */}
+      <div className="border-t border-white/10">
+        <div className="mx-auto max-w-6xl px-5 py-5 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-primary-foreground/50">
+          <p>© 2026 Gustoza. Всички права запазени.</p>
+          <p>Authentic Greek Restaurant in Sofia</p>
+        </div>
+      </div>
+
     </footer>
   );
 }
