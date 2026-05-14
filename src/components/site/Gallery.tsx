@@ -26,7 +26,7 @@ export function Gallery() {
             <div
               key={i}
               className={`overflow-hidden rounded-2xl shadow-sm bg-secondary ${
-                i === 6 ? "col-span-2 md:col-span-1" : ""
+                i === 6 ? "col-span-2 md:col-span-3" : ""
               }`}
             >
               <img
