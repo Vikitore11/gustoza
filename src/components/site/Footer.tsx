@@ -2,12 +2,15 @@ export function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="mx-auto max-w-6xl px-5 py-14 grid md:grid-cols-12 gap-8">
+
         {/* Brand */}
         <div className="md:col-span-5">
           <div className="font-display text-3xl font-bold">Gustoza</div>
+
           <p className="mt-3 text-primary-foreground/70 max-w-sm text-sm leading-relaxed">
             Автентичен гръцки ресторант в София от 1996 г. Прясна риба, мезета и истинска средиземноморска атмосфера.
           </p>
+
           <div className="mt-5 flex gap-3">
             {[
               {
@@ -38,29 +41,55 @@ export function Footer() {
               </a>
             ))}
           </div>
+        </div>
 
-          {/* Contacts + Hours wrapper */}
-          <div className="md:col-span-5 md:col-start-7 grid grid-cols-2 gap-8">
+        {/* Contacts + Hours wrapper */}
+        <div className="md:col-span-5 md:col-start-7 grid grid-cols-2 gap-8">
 
-            {/* Contacts */}
-            <div>
-              <div className="font-semibold mb-3 text-sm uppercase tracking-wider text-primary-foreground/50">Контакти</div>
-              <ul className="space-y-2 text-primary-foreground/80 text-sm">
-                <li>ж.к Христо Смирненски, ул. Мъдрен 18</li>
-                <li>София 1574</li>
-                <li className="pt-1"><a href="tel:+359888231246" className="hover:text-accent transition-colors">+359 88 823 1246</a></li>
-                <li><a href="mailto:hello@gustoza.bg" className="hover:text-accent transition-colors">hello@gustoza.bg</a></li>
-              </ul>
+          {/* Contacts */}
+          <div>
+            <div className="font-semibold mb-3 text-sm uppercase tracking-wider text-primary-foreground/50">
+              Контакти
             </div>
 
-            {/* Working hours */}
-            <div className="text-center">
-              <div className="font-semibold mb-3 text-sm uppercase tracking-wider text-primary-foreground/50">Работно време</div>
-              <ul className="space-y-2 text-primary-foreground/80 text-sm">
-                <li className="flex justify-center gap-4"><span>Пон – Нед</span><span>11:30 – 23:00</span></li>
-              </ul>
-            </div>
+            <ul className="space-y-2 text-primary-foreground/80 text-sm">
+              <li>ж.к Христо Смирненски, ул. Мъдрен 18</li>
+              <li>София 1574</li>
+
+              <li className="pt-1">
+                <a
+                  href="tel:+359888231246"
+                  className="hover:text-accent transition-colors"
+                >
+                  +359 88 823 1246
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="mailto:hello@gustoza.bg"
+                  className="hover:text-accent transition-colors"
+                >
+                  hello@gustoza.bg
+                </a>
+              </li>
+            </ul>
           </div>
+
+          {/* Working hours */}
+          <div className="text-center">
+            <div className="font-semibold mb-3 text-sm uppercase tracking-wider text-primary-foreground/50">
+              Работно време
+            </div>
+
+            <ul className="space-y-2 text-primary-foreground/80 text-sm">
+              <li className="flex justify-center gap-4">
+                <span>Пон – Нед</span>
+                <span>11:30 – 23:00</span>
+              </li>
+            </ul>
+          </div>
+
         </div>
       </div>
     </footer>
