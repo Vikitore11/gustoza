@@ -354,27 +354,28 @@ export function MenuPreview() {
         </div>
 
         {/* Category tabs */}
-        <div className="mt-10 flex flex-wrap justify-center gap-2">
-          {categories.map((c) => (
-            <button
-              key={c.key}
-              onClick={() => setActive(c.key)}
-              className={`px-4 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 flex items-center gap-1.5 ${
-                active === c.key
-                  ? "bg-primary text-primary-foreground shadow-warm"
-                  : "bg-background text-foreground hover:bg-sand"
-              }`}
-            >
-              <span>{c.emoji}</span>
-              <span>{c.label}</span>
-            </button>
-          ))}
+        <div className="mt-7 md:mt-10 -mx-4 md:mx-0 overflow-x-auto">
+          <div className="flex gap-2 w-max px-4 pb-2 md:w-auto md:flex-wrap md:justify-center md:px-0">
+            {categories.map((c) => (
+              <button
+                key={c.key}
+                onClick={() => setActive(c.key)}
+                className={`shrink-0 px-4 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 flex items-center gap-1.5 ${active === c.key
+                    ? "bg-primary text-primary-foreground shadow-warm"
+                    : "bg-background text-foreground hover:bg-sand"
+                  }`}
+              >
+                <span>{c.emoji}</span>
+                <span>{c.label}</span>
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* Menu panel */}
         <div className="mt-10 grid md:grid-cols-5 gap-6 items-start">
           {/* Food photo */}
-          <div className="md:col-span-2 rounded-2xl overflow-hidden shadow-warm relative group sticky top-24">
+          <div className="md:col-span-2 rounded-2xl overflow-hidden shadow-warm relative group md:sticky md:top-24">
             <img
               key={cat.key}
               src={cat.image}

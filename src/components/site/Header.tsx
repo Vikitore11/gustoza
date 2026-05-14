@@ -34,15 +34,26 @@ export function Header() {
             Резервирай
           </a>
         </nav>
-        <button
-          aria-label="Меню"
-          onClick={() => setOpen(o => !o)}
-          className={`md:hidden p-2 ${scrolled ? "text-foreground" : "text-white"}`}
-        >
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            {open ? <path d="M6 6l12 12M6 18L18 6"/> : <path d="M4 7h16M4 12h16M4 17h16"/>}
-          </svg>
-        </button>
+        <div className="md:hidden flex items-center gap-2">
+          <a
+            href={RESERVE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full bg-accent text-accent-foreground px-4 py-2 text-sm font-semibold shadow-sm"
+          >
+            Резервирай
+          </a>
+
+          <button
+            aria-label="Меню"
+            onClick={() => setOpen(o => !o)}
+            className={`p-2 ${scrolled ? "text-foreground" : "text-white"}`}
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              {open ? <path d="M6 6l12 12M6 18L18 6" /> : <path d="M4 7h16M4 12h16M4 17h16" />}
+            </svg>
+          </button>
+        </div>
       </div>
       {open && (
         <div className="md:hidden bg-background border-t border-border">
